@@ -90,5 +90,14 @@ modules:
       - Just Perfection
       - Dash to Dock
 
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Inter
+
+  - type: gschema-overrides
+    include:
+      - zz-biber-os.gschema.override
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

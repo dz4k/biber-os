@@ -88,11 +88,6 @@ modules:
       remove:
       # - org.gnome.eog
 
-  - type: gnome-extensions
-    install:
-      - Just Perfection
-      - Dash to Dock
-
   - type: fonts
     fonts:
       google-fonts:

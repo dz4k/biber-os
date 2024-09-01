@@ -43,7 +43,7 @@ modules:
         - dev.geopjr.Tuba
 
         # GNOME basics that are missing for some reason
-        - org.gnome.Font-Viewer
+        - org.gnome.font-viewer
         - org.gnome.Loupe
 
         # media

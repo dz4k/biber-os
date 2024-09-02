@@ -8,14 +8,13 @@ image-version: 41
 
 modules:
   - type: files
-    files:
-      - source: system
-        destination: /
+    files: [{ source: system, destination: / }]
 
   - type: rpm-ostree
-    repos:
-      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    keys:
+    repos: [https://pkgs.tailscale.com/stable/fedora/tailscale.repo]
+    remove:
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     install:
       - stow
       - jq
@@ -24,9 +23,6 @@ modules:
       - hledger-ui
       - nextcloud-client
       - fastfetch
-    remove:
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true
@@ -44,6 +40,7 @@ modules:
 
         # GNOME basics that are missing for some reason
         - org.gnome.font-viewer
+        - org.gnome.FileRoller
         - org.gnome.Loupe
 
         # media
@@ -77,10 +74,5 @@ modules:
         # - app.devsuite.Ptyxis # the new gnome terminal is good enough (better?)
 
       remove: []
-
-  - type: fonts
-    fonts:
-      google-fonts:
-        - Inter
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

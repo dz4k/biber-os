@@ -34,7 +34,7 @@ modules:
         # browser
         - com.google.Chrome
         - org.mozilla.firefox
-        - org.gnome.Web
+        - org.gnome.Epiphany
 
         # Social/Chat
         - com.discordapp.Discord

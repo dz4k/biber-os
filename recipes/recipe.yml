@@ -11,13 +11,16 @@ modules:
     files: [{ source: system, destination: / }]
 
   - type: rpm-ostree
-    repos: [https://pkgs.tailscale.com/stable/fedora/tailscale.repo]
+    repos:
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - toolbox
     install:
       - stow
       - jq
+      - distrobox
       - tailscale
       - hledger
       - hledger-ui
@@ -31,9 +34,11 @@ modules:
         # browser
         - com.google.Chrome
         - org.mozilla.firefox
+        - org.gnome.Web
 
         # Social/Chat
         - com.discordapp.Discord
+        - org.gnome.Fractal
         - com.github.junrrein.PDFSlicer
         - org.mozilla.Thunderbird
         - dev.geopjr.Tuba
@@ -42,6 +47,8 @@ modules:
         - org.gnome.font-viewer
         - org.gnome.FileRoller
         - org.gnome.Loupe
+        - org.gnome.NautilusPreviewer
+        - org.gnome.Characters
 
         # media
         - com.github.neithern.g4music
@@ -71,7 +78,6 @@ modules:
         # System
         - com.github.tchx84.Flatseal
         - com.mattjakeman.ExtensionManager
-        # - app.devsuite.Ptyxis # the new gnome terminal is good enough (better?)
 
       remove: []
 

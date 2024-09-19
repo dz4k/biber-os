@@ -51,6 +51,10 @@ modules:
         - org.gnome.Characters
         - org.gnome.Calculator
 
+        # Development
+        - dev.zed.Zed
+        - org.gnome.Builder
+
         # media
         - com.github.neithern.g4music
         - com.github.rafostar.Clapper

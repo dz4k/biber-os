@@ -49,6 +49,7 @@ modules:
         - org.gnome.Loupe
         - org.gnome.NautilusPreviewer
         - org.gnome.Characters
+        - org.gnome.Calculator
 
         # media
         - com.github.neithern.g4music

@@ -47,6 +47,7 @@ modules:
         - org.gnome.font-viewer
         - org.gnome.FileRoller
         - org.gnome.Loupe
+        - org.gnome.Calculator
         - org.gnome.NautilusPreviewer
         - org.gnome.Characters
         - org.gnome.Calculator

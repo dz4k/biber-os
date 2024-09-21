@@ -47,6 +47,7 @@ modules:
         - org.gnome.font-viewer
         - org.gnome.FileRoller
         - org.gnome.Loupe
+        - org.gnome.Showtime
         - org.gnome.Calculator
         - org.gnome.NautilusPreviewer
         - org.gnome.Characters
@@ -58,7 +59,6 @@ modules:
 
         # media
         - com.github.neithern.g4music
-        - com.github.rafostar.Clapper
         - org.gnome.Podcasts
         - org.gimp.GIMP
         - org.inkscape.Inkscape

@@ -39,7 +39,6 @@ modules:
         # Social/Chat
         - com.discordapp.Discord
         - org.gnome.Fractal
-        - com.github.junrrein.PDFSlicer
         - org.mozilla.Thunderbird
         - dev.geopjr.Tuba
 
@@ -56,6 +55,7 @@ modules:
         # Development
         - dev.zed.Zed
         - org.gnome.Builder
+        - re.sonny.Commit
 
         # media
         - com.github.neithern.g4music
@@ -65,6 +65,7 @@ modules:
         - org.nickvision.tubeconverter
         - org.nickvision.tagger
         - org.gnome.Snapshot
+        - io.gitlab.adhami3310.Footage
 
         # Games
         - org.gnome.Mines
@@ -79,11 +80,13 @@ modules:
         - com.github.johnfactotum.Foliate
         - garden.jamie.Morphosis
         - org.gnome.Papers
+        - com.github.junrrein.PDFSlicer
         - org.onlyoffice.desktopeditors
 
         # System
         - com.github.tchx84.Flatseal
         - com.mattjakeman.ExtensionManager
+        - io.gitlab.adhami3310.Impression
 
       remove: []
 

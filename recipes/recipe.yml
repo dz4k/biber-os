@@ -10,22 +10,21 @@ modules:
   - type: files
     files: [{ source: system, destination: / }]
 
+  - type: bling
+    install:
+      - rpmfusion
+
   - type: rpm-ostree
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-      - toolbox
     install:
-      - stow
-      - jq
-      - distrobox
       - tailscale
-      - hledger
-      - hledger-ui
-      - nextcloud-client
-      - fastfetch
+      - nextcloud-client-nautilus
+      - v4l2loopback
+      - ffmpeg
 
   - type: default-flatpaks
     notify: true
@@ -53,8 +52,6 @@ modules:
         - org.gnome.Calculator
 
         # Development
-        - dev.zed.Zed
-        - org.gnome.Builder
         - re.sonny.Commit
 
         # media
